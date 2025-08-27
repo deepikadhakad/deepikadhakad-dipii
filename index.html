@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CRM Dashboard - Lands & Homes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <img src="https://dummyimage.com/40x40/0aa/fff.png&text=L" alt="L&H" class="brand-logo" />
+          <div class="brand-text">
+            <div class="brand-title">Lands & Homes</div>
+            <div class="brand-subtitle">CRM</div>
+          </div>
+        </div>
+        <nav class="nav">
+          <a class="nav-item active">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">CRM Dashboard</span>
+            <span class="nav-pip">›</span>
+          </a>
+          <a class="nav-item"><span class="nav-icon">📄</span><span class="nav-label">My Listings</span></a>
+          <a class="nav-item"><span class="nav-icon">👥</span><span class="nav-label">My Leads</span></a>
+          <a class="nav-item"><span class="nav-icon">📨</span><span class="nav-label">Property Requests</span></a>
+          <a class="nav-item"><span class="nav-icon">👤</span><span class="nav-label">My Team</span></a>
+          <a class="nav-item"><span class="nav-icon">📣</span><span class="nav-label">My Campaigns</span></a>
+          <a class="nav-item"><span class="nav-icon">🕒</span><span class="nav-label">My Activity</span></a>
+          <a class="nav-item"><span class="nav-icon">👛</span><span class="nav-label">My Wallet</span></a>
+          <a class="nav-item"><span class="nav-icon">⚙️</span><span class="nav-label">My Profile</span></a>
+          <a class="nav-item"><span class="nav-icon">❓</span><span class="nav-label">Help & Support</span></a>
+        </nav>
+        <div class="sidebar-footer">
+          <button class="logout-btn">⎋ Logout</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <h1>CRM Dashboard</h1>
+        </header>
+
+        <section class="kpis">
+          <div class="kpi-card">
+            <div class="kpi-icon">🔥</div>
+            <div class="kpi-meta">
+              <div class="kpi-title">Hot Leads</div>
+              <div class="kpi-value">82</div>
+            </div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-icon">📣</div>
+            <div class="kpi-meta">
+              <div class="kpi-title">Follow-ups Due Today</div>
+              <div class="kpi-value">0</div>
+            </div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-icon">💡</div>
+            <div class="kpi-meta">
+              <div class="kpi-title">Smart Suggestions</div>
+              <div class="kpi-value">14</div>
+            </div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-icon">🗓️</div>
+            <div class="kpi-meta">
+              <div class="kpi-title">Meetings Scheduled</div>
+              <div class="kpi-value">0</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-2">
+          <div class="panel">
+            <div class="panel-title">Leads Captured by Ads</div>
+            <div class="progress-bar">
+              <div class="segment new" style="width:55%"></div>
+              <div class="segment contacted" style="width:16%"></div>
+              <div class="segment shortlisted" style="width:20%"></div>
+              <div class="segment hot" style="width:9%"></div>
+            </div>
+            <ul class="legend">
+              <li><span class="dot new"></span>New 110</li>
+              <li><span class="dot contacted"></span>Contacted</li>
+              <li><span class="dot shortlisted"></span>Shortlisted</li>
+              <li><span class="dot hot"></span>Hot</li>
+            </ul>
+          </div>
+
+          <div class="panel light">
+            <div class="panel-title with-icon">Upcoming Meetings</div>
+            <div class="checkline">
+              <span class="check">✔</span>
+              <span>You have no meetings scheduled yet.</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-2">
+          <div class="panel">
+            <div class="panel-title">Team Performance</div>
+            <div class="team">
+              <ul class="team-list">
+                <li><span class="dot hyderabad"></span>Hyderabad <span class="muted">7 Leads</span></li>
+                <li><span class="dot delhi"></span>Delhi <span class="muted">6 Leads</span></li>
+                <li><span class="dot bangalore"></span>Bangalore <span class="muted">8 Leads</span></li>
+              </ul>
+              <div class="pie">
+                <canvas id="teamPie" width="240" height="240" aria-label="Team performance pie chart"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel light">
+            <div class="panel-title with-icon">Follow-ups Due</div>
+            <div class="checkline">
+              <span class="check">✔</span>
+              <span>All follow-up tasks are completed.</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+  </html>
+
