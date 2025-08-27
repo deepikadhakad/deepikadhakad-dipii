@@ -1,0 +1,73 @@
+.sidebar {
+  width: 260px;
+  background: #073b35;
+  color: #e8fff7;
+  padding: 24px 16px;
+}
+
+.sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.brand-mark {
+  background: #0ea679;
+  color: white;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+.brand-name {
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1 1 auto;
+}
+.nav-item {
+  display: grid;
+  grid-template-columns: 24px 1fr 16px;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+.nav-item:hover { background: #0a5048; }
+.nav-item.active { background: #0a5048; }
+.nav-ico { opacity: 0.9; }
+.nav-chevron { justify-self: end; opacity: 0.6; }
+
+.logout { margin-top: 12px; }
+.logout-btn {
+  width: 100%;
+  background: #e8fff7;
+  color: #073b35;
+  border: 0;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+  background: #0f2a28;
+}
+.content-area {
+  background: #ecf5f3;
+  padding: 20px;
+}
+
