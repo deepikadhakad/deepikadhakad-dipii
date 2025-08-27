@@ -1,0 +1,59 @@
+.dashboard { max-width: 1120px; margin: 0 auto; }
+.page-header { display: flex; align-items: center; margin: 10px 0 16px; }
+.page-header h1 { margin: 0; font-size: 28px; color: #1b2b28; }
+
+.top-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 16px; }
+.stat-card { background: white; border-radius: 10px; padding: 16px; box-shadow: 0 1px 0 rgba(0,0,0,.04); display: grid; grid-template-columns: 36px 1fr; gap: 10px; border: 1px solid #e7eeec; }
+.stat-icon { font-size: 20px; }
+.stat-label { color: #5a6d68; font-size: 13px; margin-bottom: 6px; }
+.stat-value { font-size: 28px; font-weight: 700; color: #1b2b28; }
+
+.grid-2-1 { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; margin-bottom: 16px; }
+.right-column { display: grid; gap: 16px; }
+
+.card { background: white; border-radius: 10px; padding: 16px; border: 1px solid #e7eeec; }
+.card h3 { margin: 0 0 10px; font-size: 16px; color: #1b2b28; }
+
+.ads-progress .progress { display: flex; height: 10px; background: #e7eeec; border-radius: 6px; overflow: hidden; }
+.ads-progress .bar { height: 100%; }
+.ads-progress .bar.new { background: #1a8d6e; }
+.ads-progress .bar.contacted { background: #2fb187; }
+.ads-progress .bar.shortlisted { background: #8bd9c2; }
+.ads-progress .bar.hot { background: #ff7a59; }
+.ads-progress .legend { display: flex; gap: 18px; align-items: center; margin-top: 10px; color: #5a6d68; font-size: 12px; }
+.ads-progress .legend .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin: 0 6px 0 12px; }
+.ads-progress .legend .new { background: #1a8d6e; margin-left: 0; }
+.ads-progress .legend .contacted { background: #2fb187; }
+.ads-progress .legend .shortlisted { background: #8bd9c2; }
+.ads-progress .legend .hot { background: #ff7a59; }
+
+.side-card .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.side-card .card-icon { font-size: 18px; }
+.subhead { color: #6f837d; font-size: 12px; margin-bottom: 8px; }
+.pill { border-radius: 10px; padding: 10px 12px; font-size: 12px; }
+.pill.success { background: #f0fbf6; color: #0d6b50; border: 1px solid #ccefe2; }
+
+.team-performance .team-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; align-items: center; }
+.team-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.team-list li { display: grid; grid-template-columns: 16px 1fr auto; align-items: center; gap: 10px; color: #1b2b28; }
+.team-list .city { font-weight: 600; }
+.team-list .value { color: #6f837d; }
+.dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.dot.dark { background: #003b34; }
+.dot.mid { background: #1a8d6e; }
+.dot.light { background: #52b39a; }
+
+/* SVG pie chart styling */
+.pie { width: 220px; height: 220px; }
+.pie .bg { fill: none; stroke: #eaf4f1; stroke-width: 10; }
+.pie .slice { fill: none; stroke-width: 10; }
+.pie .slice.s55 { stroke: #2fb187; stroke-dasharray: 55 45; stroke-dashoffset: 25; }
+.pie .slice.s20 { stroke: #1a8d6e; stroke-dasharray: 20 80; stroke-dashoffset: -30; }
+.pie .slice.s16 { stroke: #52b39a; stroke-dasharray: 16 84; stroke-dashoffset: -50; }
+.pie-center { fill: #ffffff; font-size: 6px; font-weight: 700; }
+
+@media (max-width: 1100px) {
+  .top-stats { grid-template-columns: repeat(2, 1fr); }
+  .grid-2-1 { grid-template-columns: 1fr; }
+}
+
