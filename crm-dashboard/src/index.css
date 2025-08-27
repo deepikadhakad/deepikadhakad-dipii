@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* App surface and typography defaults */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+/* Utility helpers for the dashboard */
+.card {
+  @apply bg-white rounded-xl border border-slate-200 shadow-sm;
+}
+
+.muted {
+  @apply text-slate-500;
+}
