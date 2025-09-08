@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Starter UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">Starter UI</div>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#cta" class="btn btn-small">Get Started</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container">
+          <h1>Build a beautiful UI fast</h1>
+          <p class="subtitle">A clean, responsive starter you can customize in minutes.</p>
+          <div class="actions">
+            <button id="primaryCta" class="btn">Primary action</button>
+            <a href="#features" class="btn btn-secondary">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container">
+          <h2>Features</h2>
+          <div class="grid">
+            <div class="card">
+              <h3>Responsive</h3>
+              <p>Looks great on mobile and desktop.</p>
+            </div>
+            <div class="card">
+              <h3>Accessible</h3>
+              <p>Semantic HTML and proper contrast.</p>
+            </div>
+            <div class="card">
+              <h3>Minimal</h3>
+              <p>Just HTML, CSS, and a sprinkle of JS.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2>About</h2>
+          <p>This template is a zero-dependency starter for landing pages and simple apps.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Starter UI</p>
+      </div>
+    </footer>
+
+    <div id="toast" role="status" aria-live="polite" class="toast" hidden>
+      <span>Action triggered!</span>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
+
